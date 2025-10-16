@@ -1,0 +1,336 @@
+8.7s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.7s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.7s 3 0.00s - to python to disable frozen modules.
+8.7s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.5s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.5s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.5s 7 0.00s - to python to disable frozen modules.
+9.5s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+12.3s 9 Sun Sep 28 22:35:15 2025
+12.3s 10 +-----------------------------------------------------------------------------------------+
+12.3s 11 | NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |
+12.3s 12 |-----------------------------------------+------------------------+----------------------+
+12.3s 13 | GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+12.3s 14 | Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+12.3s 15 |                                         |                        |               MIG M. |
+12.3s 16 |=========================================+========================+======================|
+12.3s 17 |   0  Tesla P100-PCIE-16GB           Off |   00000000:00:04.0 Off |                    0 |
+12.3s 18 | N/A   35C    P0             26W /  250W |       0MiB /  16384MiB |      0%      Default |
+12.3s 19 |                                         |                        |                  N/A |
+12.3s 20 +-----------------------------------------+------------------------+----------------------+
+12.3s 21 
+12.3s 22 +-----------------------------------------------------------------------------------------+
+12.3s 23 | Processes:                                                                              |
+12.3s 24 |  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+12.3s 25 |        ID   ID                                                               Usage      |
+12.3s 26 |=========================================================================================|
+12.3s 27 |  No running processes found                                                             |
+12.3s 28 +-----------------------------------------------------------------------------------------+
+12.4s 29 Architecture:             x86_64
+12.4s 30 CPU op-mode(s):         32-bit, 64-bit
+12.4s 31 Address sizes:          46 bits physical, 48 bits virtual
+12.4s 32 Byte Order:             Little Endian
+12.4s 33 CPU(s):                   4
+12.4s 34 On-line CPU(s) list:    0-3
+12.4s 35 Vendor ID:                GenuineIntel
+12.4s 36 Model name:             Intel(R) Xeon(R) CPU @ 2.00GHz
+12.4s 37 CPU family:           6
+12.4s 38 Model:                85
+12.4s 39 Thread(s) per core:   2
+12.4s 40 Core(s) per socket:   2
+12.4s 41 Socket(s):            1
+12.4s 42 Stepping:             3
+12.4s 43 BogoMIPS:             4000.33
+12.4s 44 Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge m
+12.4s 45 ca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht sysc
+12.4s 46 all nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xt
+12.4s 47 opology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq
+12.4s 48 ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt
+12.4s 49 aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dno
+12.4s 50 wprefetch pti ssbd ibrs ibpb stibp fsgsbase tsc_adjust
+12.4s 51 bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx avx512f
+12.4s 52 avx512dq rdseed adx smap clflushopt clwb avx512cd avx5
+12.4s 53 12bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat md_c
+12.4s 54 lear arch_capabilities
+12.4s 55 Virtualization features:
+12.4s 56 Hypervisor vendor:      KVM
+12.4s 57 Virtualization type:    full
+12.4s 58 Caches (sum of all):
+12.4s 59 L1d:                    64 KiB (2 instances)
+12.4s 60 L1i:                    64 KiB (2 instances)
+12.4s 61 L2:                     2 MiB (2 instances)
+12.4s 62 L3:                     38.5 MiB (1 instance)
+12.4s 63 NUMA:
+12.4s 64 NUMA node(s):           1
+12.4s 65 NUMA node0 CPU(s):      0-3
+12.4s 66 Vulnerabilities:
+12.4s 67 Gather data sampling:   Not affected
+12.4s 68 Itlb multihit:          Not affected
+12.4s 69 L1tf:                   Mitigation; PTE Inversion
+12.4s 70 Mds:                    Mitigation; Clear CPU buffers; SMT Host state unknown
+12.4s 71 Meltdown:               Mitigation; PTI
+12.4s 72 Mmio stale data:        Vulnerable: Clear CPU buffers attempted, no microcode;
+12.4s 73 SMT Host state unknown
+12.4s 74 Reg file data sampling: Not affected
+12.4s 75 Retbleed:               Mitigation; IBRS
+12.4s 76 Spec rstack overflow:   Not affected
+12.4s 77 Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prct
+12.4s 78 l
+12.4s 79 Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointe
+12.4s 80 r sanitization
+12.4s 81 Spectre v2:             Mitigation; IBRS; IBPB conditional; STIBP conditional;
+12.4s 82 RSB filling; PBRSB-eIBRS Not affected; BHI SW loop, K
+12.4s 83 VM SW loop
+12.4s 84 Srbds:                  Not affected
+12.4s 85 Tsx async abort:        Mitigation; Clear CPU buffers; SMT Host state unknown
+12.6s 86 total        used        free      shared  buff/cache   available
+12.6s 87 Mem:            31Gi       669Mi        23Gi       2.0Mi       7.1Gi        30Gi
+12.6s 88 Swap:             0B          0B          0B
+12.7s 89 PRETTY_NAME="Ubuntu 22.04.4 LTS"
+12.7s 90 NAME="Ubuntu"
+12.7s 91 VERSION_ID="22.04"
+12.7s 92 VERSION="22.04.4 LTS (Jammy Jellyfish)"
+12.7s 93 VERSION_CODENAME=jammy
+12.7s 94 ID=ubuntu
+12.7s 95 ID_LIKE=debian
+12.7s 96 HOME_URL="https://www.ubuntu.com/"
+12.7s 97 SUPPORT_URL="https://help.ubuntu.com/"
+12.7s 98 BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+12.7s 99 PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+12.7s 100 UBUNTU_CODENAME=jammy
+12.9s 101 Filesystem                                                              Size  Used Avail Use% Mounted on
+12.9s 102 overlay                                                                 7.9T  6.3T  1.7T  80% /
+12.9s 103 tmpfs                                                                    64M     0   64M   0% /dev
+12.9s 104 shm                                                                      14G     0   14G   0% /dev/shm
+12.9s 105 /dev/sda1                                                               122G  4.7G  118G   4% /opt/bin
+12.9s 106 /dev/loop1                                                               20G  188K   20G   1% /kaggle/lib
+12.9s 107 192.168.11.2:/data/kagglesdsdata/datasets/3570200/6216738/dd3sdhqfm0ml   63T   44T   20T  70% /kaggle/input/tilda-400-64x64-patches
+12.9s 108 /dev/mapper/snap                                                        7.9T  6.3T  1.7T  80% /etc/hosts
+12.9s 109 tmpfs                                                                    16G     0   16G   0% /proc/acpi
+12.9s 110 tmpfs                                                                    16G     0   16G   0% /proc/scsi
+12.9s 111 tmpfs                                                                    16G     0   16G   0% /sys/firmware
+30.4s 112 Random seed set as 42
+30.4s 113 
+30.6s 114 Random seed set as 42
+30.6s 115 
+31.0s 116 Total images found: 25600
+31.0s 117 
+31.0s 118 Original image count per class:
+31.0s 119 good            23170
+31.0s 120 objects           837
+31.0s 121 oil spot          636
+31.0s 122 thread error      620
+31.0s 123 hole              337
+31.0s 124 dtype: int64
+31.8s 125 Random seed set as 42
+31.8s 126 
+31.8s 127 Random seed set as 42
+31.8s 128 
+31.8s 129 Random seed set as 42
+31.9s 130 
+31.9s 131 Random seed set as 42
+31.9s 132 
+32.0s 133 Random seed set as 42
+32.0s 134 
+32.1s 135 Real Data Loaded: 400 unique Image IDs and 25600 total patches.
+32.1s 136 Initial Patch Split (Multi-class): Good (0)=23170, Defects (1-4)=2430.
+32.1s 137 Image Stratification Split (Multi-class): good(0)=0, hole(1)=101, objects(2)=100, oil spot(3)=99, thread error(4)=100
+32.1s 138 
+32.1s 139 --- Initial Data Split (Non-Stratified) ---
+32.1s 140 Total Image IDs: 400
+32.1s 141 Dedicated Test Set Split (10%): 40 image IDs.
+32.1s 142 K-Fold Train/Validation Pool: 360 image IDs.
+32.1s 143 Dedicated Test Set Ready with 2560 patches for final evaluation.
+32.1s 144 
+32.1s 145 --- Starting Undersampling Experiment (Stratified K-Fold on IMAGE IDs) ---
+32.1s 146 
+32.1s 147 [Factor: 30% of Majority Class Patches in Training Set]
+32.1s 148 > Running Fold 1/5 (Splitting by Image ID)...
+32.1s 149 Train Set Size (Undersampled): Good (0)=5000, Defects (1-4)=1763
+32.5s 150 Downloading: "https://download.pytorch.org/models/resnet50-11ad3fa6.pth" to /root/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth
+33.1s 151 0%|          | 0.00/97.8M [00:00<?, ?B/s] 15%|█▍        | 14.2M/97.8M [00:00<00:00, 149MB/s] 30%|██▉       | 29.1M/97.8M [00:00<00:00, 153MB/s] 52%|█████▏    | 51.0M/97.8M [00:00<00:00, 187MB/s] 75%|███████▍  | 73.0M/97.8M [00:00<00:00, 204MB/s] 97%|█████████▋| 95.1M/97.8M [00:00<00:00, 214MB/s]100%|██████████| 97.8M/97.8M [00:00<00:00, 199MB/s]
+144.7s 152 Epoch 1/30: Train Loss=0.8387 | Val Acc=0.8813 | Val F1 (W)=0.8791 | Val F1 (M)=0.2947
+208.7s 153 Epoch 2/30: Train Loss=0.6574 | Val Acc=0.9234 | Val F1 (W)=0.9215 | Val F1 (M)=0.5656
+272.6s 154 Epoch 3/30: Train Loss=0.5499 | Val Acc=0.9043 | Val F1 (W)=0.9123 | Val F1 (M)=0.5376
+336.7s 155 Epoch 4/30: Train Loss=0.4995 | Val Acc=0.9379 | Val F1 (W)=0.9386 | Val F1 (M)=0.6672
+400.6s 156 Epoch 5/30: Train Loss=0.4513 | Val Acc=0.9290 | Val F1 (W)=0.9331 | Val F1 (M)=0.6587
+464.0s 157 Epoch 6/30: Train Loss=0.4280 | Val Acc=0.9447 | Val F1 (W)=0.9388 | Val F1 (M)=0.6470
+527.9s 158 Epoch 7/30: Train Loss=0.3929 | Val Acc=0.9523 | Val F1 (W)=0.9487 | Val F1 (M)=0.7055
+591.7s 159 Epoch 8/30: Train Loss=0.3698 | Val Acc=0.9429 | Val F1 (W)=0.9446 | Val F1 (M)=0.7123
+655.9s 160 Epoch 9/30: Train Loss=0.3476 | Val Acc=0.9492 | Val F1 (W)=0.9494 | Val F1 (M)=0.7327
+719.0s 161 Epoch 10/30: Train Loss=0.3339 | Val Acc=0.9488 | Val F1 (W)=0.9497 | Val F1 (M)=0.7332
+781.6s 162 Epoch 11/30: Train Loss=0.3247 | Val Acc=0.9583 | Val F1 (W)=0.9583 | Val F1 (M)=0.7720
+844.7s 163 Epoch 12/30: Train Loss=0.3054 | Val Acc=0.9499 | Val F1 (W)=0.9520 | Val F1 (M)=0.7548
+908.1s 164 Epoch 13/30: Train Loss=0.2876 | Val Acc=0.9434 | Val F1 (W)=0.9477 | Val F1 (M)=0.7348
+970.5s 165 Epoch 14/30: Train Loss=0.2773 | Val Acc=0.9408 | Val F1 (W)=0.9452 | Val F1 (M)=0.7280
+1033.3s 166 Epoch 15/30: Train Loss=0.2796 | Val Acc=0.9282 | Val F1 (W)=0.9359 | Val F1 (M)=0.6928
+1095.8s 167 Epoch 16/30: Train Loss=0.2550 | Val Acc=0.9588 | Val F1 (W)=0.9582 | Val F1 (M)=0.7816
+1158.0s 168 Epoch 17/30: Train Loss=0.2600 | Val Acc=0.9564 | Val F1 (W)=0.9561 | Val F1 (M)=0.7580
+1220.2s 169 Epoch 18/30: Train Loss=0.2464 | Val Acc=0.9488 | Val F1 (W)=0.9515 | Val F1 (M)=0.7520
+1282.6s 170 Epoch 19/30: Train Loss=0.2354 | Val Acc=0.9505 | Val F1 (W)=0.9527 | Val F1 (M)=0.7555
+1345.1s 171 Epoch 20/30: Train Loss=0.2276 | Val Acc=0.9579 | Val F1 (W)=0.9590 | Val F1 (M)=0.7947
+1407.4s 172 Epoch 21/30: Train Loss=0.2294 | Val Acc=0.9497 | Val F1 (W)=0.9530 | Val F1 (M)=0.7743
+1469.5s 173 Epoch 22/30: Train Loss=0.2114 | Val Acc=0.9564 | Val F1 (W)=0.9557 | Val F1 (M)=0.7488
+1532.1s 174 Epoch 23/30: Train Loss=0.2078 | Val Acc=0.9661 | Val F1 (W)=0.9662 | Val F1 (M)=0.8272
+1595.1s 175 Epoch 24/30: Train Loss=0.2080 | Val Acc=0.9612 | Val F1 (W)=0.9614 | Val F1 (M)=0.7912
+1657.6s 176 Epoch 25/30: Train Loss=0.1937 | Val Acc=0.9473 | Val F1 (W)=0.9507 | Val F1 (M)=0.7693
+1719.9s 177 Epoch 26/30: Train Loss=0.1948 | Val Acc=0.9661 | Val F1 (W)=0.9661 | Val F1 (M)=0.8169
+1781.9s 178 Epoch 27/30: Train Loss=0.1903 | Val Acc=0.9549 | Val F1 (W)=0.9567 | Val F1 (M)=0.7806
+1844.6s 179 Epoch 28/30: Train Loss=0.1791 | Val Acc=0.9460 | Val F1 (W)=0.9500 | Val F1 (M)=0.7536
+1907.3s 180 Epoch 29/30: Train Loss=0.1696 | Val Acc=0.9499 | Val F1 (W)=0.9532 | Val F1 (M)=0.7747
+1971.1s 181 Epoch 30/30: Train Loss=0.1822 | Val Acc=0.9544 | Val F1 (W)=0.9559 | Val F1 (M)=0.7686
+1971.1s 182 Fold 1 Results: Val Acc=0.9544, Val F1 (W)=0.9559, Val F1 (M)=0.7686, Train Time=1937.6s
+1971.1s 183 > Running Fold 2/5 (Splitting by Image ID)...
+1971.1s 184 Train Set Size (Undersampled): Good (0)=4975, Defects (1-4)=1848
+2058.6s 185 Epoch 1/30: Train Loss=0.8551 | Val Acc=0.9060 | Val F1 (W)=0.9022 | Val F1 (M)=0.3276
+2122.8s 186 Epoch 2/30: Train Loss=0.6935 | Val Acc=0.9260 | Val F1 (W)=0.9294 | Val F1 (M)=0.5193
+2187.6s 187 Epoch 3/30: Train Loss=0.6207 | Val Acc=0.9423 | Val F1 (W)=0.9335 | Val F1 (M)=0.5271
+2252.4s 188 Epoch 4/30: Train Loss=0.5665 | Val Acc=0.9021 | Val F1 (W)=0.9220 | Val F1 (M)=0.5772
+2316.2s 189 Epoch 5/30: Train Loss=0.5282 | Val Acc=0.9455 | Val F1 (W)=0.9422 | Val F1 (M)=0.5787
+2379.2s 190 Epoch 6/30: Train Loss=0.4930 | Val Acc=0.9312 | Val F1 (W)=0.9329 | Val F1 (M)=0.5256
+2443.9s 191 Epoch 7/30: Train Loss=0.4742 | Val Acc=0.9466 | Val F1 (W)=0.9451 | Val F1 (M)=0.5891
+2508.5s 192 Epoch 8/30: Train Loss=0.4515 | Val Acc=0.9507 | Val F1 (W)=0.9506 | Val F1 (M)=0.6774
+2572.7s 193 Epoch 9/30: Train Loss=0.4139 | Val Acc=0.9492 | Val F1 (W)=0.9531 | Val F1 (M)=0.7093
+2637.0s 194 Epoch 10/30: Train Loss=0.3975 | Val Acc=0.9631 | Val F1 (W)=0.9607 | Val F1 (M)=0.7425
+2700.7s 195 Epoch 11/30: Train Loss=0.3841 | Val Acc=0.9507 | Val F1 (W)=0.9520 | Val F1 (M)=0.6441
+2764.2s 196 Epoch 12/30: Train Loss=0.3680 | Val Acc=0.9542 | Val F1 (W)=0.9560 | Val F1 (M)=0.7098
+2827.4s 197 Epoch 13/30: Train Loss=0.3516 | Val Acc=0.8828 | Val F1 (W)=0.9114 | Val F1 (M)=0.6145
+2890.3s 198 Epoch 14/30: Train Loss=0.3411 | Val Acc=0.9514 | Val F1 (W)=0.9550 | Val F1 (M)=0.7297
+2953.1s 199 Epoch 15/30: Train Loss=0.3296 | Val Acc=0.9447 | Val F1 (W)=0.9491 | Val F1 (M)=0.7028
+3016.2s 200 Epoch 16/30: Train Loss=0.3050 | Val Acc=0.9677 | Val F1 (W)=0.9661 | Val F1 (M)=0.7725
+3079.1s 201 Epoch 17/30: Train Loss=0.3086 | Val Acc=0.9688 | Val F1 (W)=0.9667 | Val F1 (M)=0.7677
+3142.2s 202 Epoch 18/30: Train Loss=0.2970 | Val Acc=0.9581 | Val F1 (W)=0.9602 | Val F1 (M)=0.7467
+3204.7s 203 Epoch 19/30: Train Loss=0.2917 | Val Acc=0.9670 | Val F1 (W)=0.9673 | Val F1 (M)=0.7900
+3267.1s 204 Epoch 20/30: Train Loss=0.2679 | Val Acc=0.9703 | Val F1 (W)=0.9687 | Val F1 (M)=0.7894
+3330.5s 205 Epoch 21/30: Train Loss=0.2741 | Val Acc=0.9642 | Val F1 (W)=0.9646 | Val F1 (M)=0.7668
+3394.4s 206 Epoch 22/30: Train Loss=0.2643 | Val Acc=0.9692 | Val F1 (W)=0.9691 | Val F1 (M)=0.8043
+3457.0s 207 Epoch 23/30: Train Loss=0.2612 | Val Acc=0.9655 | Val F1 (W)=0.9669 | Val F1 (M)=0.7964
+3519.3s 208 Epoch 24/30: Train Loss=0.2514 | Val Acc=0.9681 | Val F1 (W)=0.9689 | Val F1 (M)=0.8016
+3581.9s 209 Epoch 25/30: Train Loss=0.2447 | Val Acc=0.9711 | Val F1 (W)=0.9710 | Val F1 (M)=0.8122
+3644.7s 210 Epoch 26/30: Train Loss=0.2240 | Val Acc=0.9638 | Val F1 (W)=0.9641 | Val F1 (M)=0.7819
+3707.3s 211 Epoch 27/30: Train Loss=0.2337 | Val Acc=0.9666 | Val F1 (W)=0.9658 | Val F1 (M)=0.7539
+3769.7s 212 Epoch 28/30: Train Loss=0.2272 | Val Acc=0.9681 | Val F1 (W)=0.9684 | Val F1 (M)=0.8101
+3832.1s 213 Epoch 29/30: Train Loss=0.2223 | Val Acc=0.9657 | Val F1 (W)=0.9665 | Val F1 (M)=0.7789
+3894.8s 214 Epoch 30/30: Train Loss=0.2172 | Val Acc=0.9646 | Val F1 (W)=0.9660 | Val F1 (M)=0.7940
+3894.8s 215 Fold 2 Results: Val Acc=0.9646, Val F1 (W)=0.9660, Val F1 (M)=0.7940, Train Time=1923.1s
+3894.8s 216 > Running Fold 3/5 (Splitting by Image ID)...
+3894.8s 217 Train Set Size (Undersampled): Good (0)=5005, Defects (1-4)=1747
+3970.0s 218 Epoch 1/30: Train Loss=0.8516 | Val Acc=0.9069 | Val F1 (W)=0.8909 | Val F1 (M)=0.3548
+4032.5s 219 Epoch 2/30: Train Loss=0.7144 | Val Acc=0.9238 | Val F1 (W)=0.9141 | Val F1 (M)=0.5062
+4095.4s 220 Epoch 3/30: Train Loss=0.6445 | Val Acc=0.8147 | Val F1 (W)=0.8524 | Val F1 (M)=0.4680
+4157.8s 221 Epoch 4/30: Train Loss=0.5920 | Val Acc=0.9353 | Val F1 (W)=0.9298 | Val F1 (M)=0.5905
+4220.5s 222 Epoch 5/30: Train Loss=0.5667 | Val Acc=0.9349 | Val F1 (W)=0.9341 | Val F1 (M)=0.6497
+4284.2s 223 Epoch 6/30: Train Loss=0.5368 | Val Acc=0.9457 | Val F1 (W)=0.9453 | Val F1 (M)=0.6903
+4349.1s 224 Epoch 7/30: Train Loss=0.5051 | Val Acc=0.9071 | Val F1 (W)=0.9166 | Val F1 (M)=0.6344
+4414.3s 225 Epoch 8/30: Train Loss=0.4767 | Val Acc=0.8950 | Val F1 (W)=0.9095 | Val F1 (M)=0.6408
+4479.0s 226 Epoch 9/30: Train Loss=0.4569 | Val Acc=0.9525 | Val F1 (W)=0.9536 | Val F1 (M)=0.7513
+4543.4s 227 Epoch 10/30: Train Loss=0.4378 | Val Acc=0.9462 | Val F1 (W)=0.9481 | Val F1 (M)=0.7276
+4608.3s 228 Epoch 11/30: Train Loss=0.4233 | Val Acc=0.9566 | Val F1 (W)=0.9562 | Val F1 (M)=0.7807
+4672.6s 229 Epoch 12/30: Train Loss=0.3989 | Val Acc=0.9562 | Val F1 (W)=0.9567 | Val F1 (M)=0.7496
+4736.8s 230 Epoch 13/30: Train Loss=0.3940 | Val Acc=0.9653 | Val F1 (W)=0.9647 | Val F1 (M)=0.8125
+4800.7s 231 Epoch 14/30: Train Loss=0.3774 | Val Acc=0.9594 | Val F1 (W)=0.9574 | Val F1 (M)=0.7532
+4864.9s 232 Epoch 15/30: Train Loss=0.3552 | Val Acc=0.9527 | Val F1 (W)=0.9533 | Val F1 (M)=0.7402
+4928.3s 233 Epoch 16/30: Train Loss=0.3359 | Val Acc=0.9505 | Val F1 (W)=0.9525 | Val F1 (M)=0.7597
+4991.5s 234 Epoch 17/30: Train Loss=0.3336 | Val Acc=0.9690 | Val F1 (W)=0.9677 | Val F1 (M)=0.8229
+5055.2s 235 Epoch 18/30: Train Loss=0.3193 | Val Acc=0.9490 | Val F1 (W)=0.9521 | Val F1 (M)=0.7640
+5118.1s 236 Epoch 19/30: Train Loss=0.3101 | Val Acc=0.9642 | Val F1 (W)=0.9636 | Val F1 (M)=0.7843
+5181.3s 237 Epoch 20/30: Train Loss=0.3059 | Val Acc=0.9657 | Val F1 (W)=0.9650 | Val F1 (M)=0.8111
+5244.3s 238 Epoch 21/30: Train Loss=0.2881 | Val Acc=0.9694 | Val F1 (W)=0.9689 | Val F1 (M)=0.8392
+5307.5s 239 Epoch 22/30: Train Loss=0.2996 | Val Acc=0.9638 | Val F1 (W)=0.9637 | Val F1 (M)=0.8013
+5370.0s 240 Epoch 23/30: Train Loss=0.2713 | Val Acc=0.9694 | Val F1 (W)=0.9685 | Val F1 (M)=0.8309
+5432.8s 241 Epoch 24/30: Train Loss=0.2766 | Val Acc=0.9657 | Val F1 (W)=0.9653 | Val F1 (M)=0.8077
+5495.4s 242 Epoch 25/30: Train Loss=0.2716 | Val Acc=0.9625 | Val F1 (W)=0.9632 | Val F1 (M)=0.8021
+5558.1s 243 Epoch 26/30: Train Loss=0.2561 | Val Acc=0.9434 | Val F1 (W)=0.9482 | Val F1 (M)=0.7983
+5621.9s 244 Epoch 27/30: Train Loss=0.2481 | Val Acc=0.9674 | Val F1 (W)=0.9663 | Val F1 (M)=0.8140
+5685.2s 245 Epoch 28/30: Train Loss=0.2498 | Val Acc=0.9599 | Val F1 (W)=0.9602 | Val F1 (M)=0.8094
+5748.3s 246 Epoch 29/30: Train Loss=0.2493 | Val Acc=0.9618 | Val F1 (W)=0.9626 | Val F1 (M)=0.8101
+5813.1s 247 Epoch 30/30: Train Loss=0.2465 | Val Acc=0.9616 | Val F1 (W)=0.9623 | Val F1 (M)=0.8117
+5813.1s 248 Fold 3 Results: Val Acc=0.9616, Val F1 (W)=0.9623, Val F1 (M)=0.8117, Train Time=1917.9s
+5813.1s 249 > Running Fold 4/5 (Splitting by Image ID)...
+5813.1s 250 Train Set Size (Undersampled): Good (0)=5003, Defects (1-4)=1753
+5883.3s 251 Epoch 1/30: Train Loss=0.8548 | Val Acc=0.9076 | Val F1 (W)=0.8826 | Val F1 (M)=0.2989
+5946.2s 252 Epoch 2/30: Train Loss=0.7091 | Val Acc=0.9360 | Val F1 (W)=0.9238 | Val F1 (M)=0.5700
+6009.1s 253 Epoch 3/30: Train Loss=0.6196 | Val Acc=0.9390 | Val F1 (W)=0.9312 | Val F1 (M)=0.6316
+6071.6s 254 Epoch 4/30: Train Loss=0.5744 | Val Acc=0.9405 | Val F1 (W)=0.9316 | Val F1 (M)=0.5887
+6134.0s 255 Epoch 5/30: Train Loss=0.5340 | Val Acc=0.9507 | Val F1 (W)=0.9492 | Val F1 (M)=0.7261
+6196.5s 256 Epoch 6/30: Train Loss=0.5014 | Val Acc=0.9167 | Val F1 (W)=0.9248 | Val F1 (M)=0.6553
+6259.3s 257 Epoch 7/30: Train Loss=0.4655 | Val Acc=0.9572 | Val F1 (W)=0.9555 | Val F1 (M)=0.7432
+6322.5s 258 Epoch 8/30: Train Loss=0.4505 | Val Acc=0.9572 | Val F1 (W)=0.9561 | Val F1 (M)=0.7561
+6386.0s 259 Epoch 9/30: Train Loss=0.4188 | Val Acc=0.9477 | Val F1 (W)=0.9498 | Val F1 (M)=0.7355
+6449.9s 260 Epoch 10/30: Train Loss=0.4013 | Val Acc=0.9618 | Val F1 (W)=0.9611 | Val F1 (M)=0.7832
+6513.1s 261 Epoch 11/30: Train Loss=0.3824 | Val Acc=0.9572 | Val F1 (W)=0.9591 | Val F1 (M)=0.8238
+6576.2s 262 Epoch 12/30: Train Loss=0.3623 | Val Acc=0.9549 | Val F1 (W)=0.9557 | Val F1 (M)=0.7324
+6639.2s 263 Epoch 13/30: Train Loss=0.3600 | Val Acc=0.9629 | Val F1 (W)=0.9620 | Val F1 (M)=0.7763
+6702.0s 264 Epoch 14/30: Train Loss=0.3508 | Val Acc=0.9696 | Val F1 (W)=0.9696 | Val F1 (M)=0.8365
+6765.3s 265 Epoch 15/30: Train Loss=0.3183 | Val Acc=0.9553 | Val F1 (W)=0.9576 | Val F1 (M)=0.7867
+6829.2s 266 Epoch 16/30: Train Loss=0.3144 | Val Acc=0.9709 | Val F1 (W)=0.9703 | Val F1 (M)=0.8407
+6892.1s 267 Epoch 17/30: Train Loss=0.2988 | Val Acc=0.9646 | Val F1 (W)=0.9651 | Val F1 (M)=0.8221
+6954.8s 268 Epoch 18/30: Train Loss=0.2895 | Val Acc=0.9707 | Val F1 (W)=0.9701 | Val F1 (M)=0.8209
+7017.7s 269 Epoch 19/30: Train Loss=0.2895 | Val Acc=0.9688 | Val F1 (W)=0.9691 | Val F1 (M)=0.8234
+7080.5s 270 Epoch 20/30: Train Loss=0.2665 | Val Acc=0.9718 | Val F1 (W)=0.9717 | Val F1 (M)=0.8440
+7143.9s 271 Epoch 21/30: Train Loss=0.2536 | Val Acc=0.9627 | Val F1 (W)=0.9644 | Val F1 (M)=0.7729
+7207.4s 272 Epoch 22/30: Train Loss=0.2567 | Val Acc=0.9755 | Val F1 (W)=0.9756 | Val F1 (M)=0.8509
+7271.5s 273 Epoch 23/30: Train Loss=0.2510 | Val Acc=0.9740 | Val F1 (W)=0.9743 | Val F1 (M)=0.8758
+7335.2s 274 Epoch 24/30: Train Loss=0.2385 | Val Acc=0.9714 | Val F1 (W)=0.9718 | Val F1 (M)=0.8252
+7398.9s 275 Epoch 25/30: Train Loss=0.2290 | Val Acc=0.9709 | Val F1 (W)=0.9712 | Val F1 (M)=0.8550
+7462.8s 276 Epoch 26/30: Train Loss=0.2211 | Val Acc=0.9709 | Val F1 (W)=0.9712 | Val F1 (M)=0.8465
+7526.3s 277 Epoch 27/30: Train Loss=0.2147 | Val Acc=0.9629 | Val F1 (W)=0.9649 | Val F1 (M)=0.7925
+7589.8s 278 Epoch 28/30: Train Loss=0.2128 | Val Acc=0.9729 | Val F1 (W)=0.9732 | Val F1 (M)=0.8574
+7653.0s 279 Epoch 29/30: Train Loss=0.2045 | Val Acc=0.9464 | Val F1 (W)=0.9509 | Val F1 (M)=0.7991
+7716.4s 280 Epoch 30/30: Train Loss=0.2123 | Val Acc=0.9750 | Val F1 (W)=0.9750 | Val F1 (M)=0.8596
+7716.4s 281 Fold 4 Results: Val Acc=0.9750, Val F1 (W)=0.9750, Val F1 (M)=0.8596, Train Time=1902.8s
+7716.4s 282 > Running Fold 5/5 (Splitting by Image ID)...
+7716.4s 283 Train Set Size (Undersampled): Good (0)=5008, Defects (1-4)=1737
+7787.7s 284 Epoch 1/30: Train Loss=0.8315 | Val Acc=0.8885 | Val F1 (W)=0.8792 | Val F1 (M)=0.3559
+7850.7s 285 Epoch 2/30: Train Loss=0.6515 | Val Acc=0.9253 | Val F1 (W)=0.9151 | Val F1 (M)=0.5794
+7913.9s 286 Epoch 3/30: Train Loss=0.5667 | Val Acc=0.9240 | Val F1 (W)=0.9103 | Val F1 (M)=0.4750
+7977.6s 287 Epoch 4/30: Train Loss=0.5011 | Val Acc=0.9282 | Val F1 (W)=0.9305 | Val F1 (M)=0.6627
+8040.6s 288 Epoch 5/30: Train Loss=0.4582 | Val Acc=0.9295 | Val F1 (W)=0.9313 | Val F1 (M)=0.6732
+8103.5s 289 Epoch 6/30: Train Loss=0.4149 | Val Acc=0.9516 | Val F1 (W)=0.9495 | Val F1 (M)=0.7358
+8166.7s 290 Epoch 7/30: Train Loss=0.3990 | Val Acc=0.9434 | Val F1 (W)=0.9450 | Val F1 (M)=0.7437
+8230.7s 291 Epoch 8/30: Train Loss=0.3727 | Val Acc=0.9477 | Val F1 (W)=0.9457 | Val F1 (M)=0.7122
+8295.8s 292 Epoch 9/30: Train Loss=0.3632 | Val Acc=0.9583 | Val F1 (W)=0.9568 | Val F1 (M)=0.7792
+8360.1s 293 Epoch 10/30: Train Loss=0.3365 | Val Acc=0.9453 | Val F1 (W)=0.9477 | Val F1 (M)=0.7807
+8424.2s 294 Epoch 11/30: Train Loss=0.3258 | Val Acc=0.9616 | Val F1 (W)=0.9621 | Val F1 (M)=0.7907
+8488.0s 295 Epoch 12/30: Train Loss=0.3142 | Val Acc=0.9544 | Val F1 (W)=0.9544 | Val F1 (M)=0.7902
+8551.8s 296 Epoch 13/30: Train Loss=0.3011 | Val Acc=0.9501 | Val F1 (W)=0.9513 | Val F1 (M)=0.7543
+8615.0s 297 Epoch 14/30: Train Loss=0.2840 | Val Acc=0.9588 | Val F1 (W)=0.9586 | Val F1 (M)=0.7869
+8678.0s 298 Epoch 15/30: Train Loss=0.2845 | Val Acc=0.9614 | Val F1 (W)=0.9622 | Val F1 (M)=0.8038
+8741.0s 299 Epoch 16/30: Train Loss=0.2526 | Val Acc=0.8218 | Val F1 (W)=0.8547 | Val F1 (M)=0.6049
+8803.8s 300 Epoch 17/30: Train Loss=0.2688 | Val Acc=0.9666 | Val F1 (W)=0.9659 | Val F1 (M)=0.8160
+8866.7s 301 Epoch 18/30: Train Loss=0.2570 | Val Acc=0.9648 | Val F1 (W)=0.9651 | Val F1 (M)=0.8283
+8929.9s 302 Epoch 19/30: Train Loss=0.2536 | Val Acc=0.9668 | Val F1 (W)=0.9664 | Val F1 (M)=0.8475
+8993.8s 303 Epoch 20/30: Train Loss=0.2490 | Val Acc=0.9614 | Val F1 (W)=0.9621 | Val F1 (M)=0.8153
+9057.9s 304 Epoch 21/30: Train Loss=0.2402 | Val Acc=0.9664 | Val F1 (W)=0.9665 | Val F1 (M)=0.8200
+9121.4s 305 Epoch 22/30: Train Loss=0.2373 | Val Acc=0.9705 | Val F1 (W)=0.9702 | Val F1 (M)=0.8580
+9184.7s 306 Epoch 23/30: Train Loss=0.2190 | Val Acc=0.9494 | Val F1 (W)=0.9511 | Val F1 (M)=0.8057
+9247.9s 307 Epoch 24/30: Train Loss=0.2251 | Val Acc=0.9690 | Val F1 (W)=0.9683 | Val F1 (M)=0.8424
+9311.4s 308 Epoch 25/30: Train Loss=0.1987 | Val Acc=0.9622 | Val F1 (W)=0.9626 | Val F1 (M)=0.8209
+9374.8s 309 Epoch 26/30: Train Loss=0.2126 | Val Acc=0.9698 | Val F1 (W)=0.9696 | Val F1 (M)=0.8377
+9437.9s 310 Epoch 27/30: Train Loss=0.2022 | Val Acc=0.9599 | Val F1 (W)=0.9608 | Val F1 (M)=0.8243
+9501.4s 311 Epoch 28/30: Train Loss=0.2056 | Val Acc=0.9559 | Val F1 (W)=0.9584 | Val F1 (M)=0.8105
+9564.6s 312 Epoch 29/30: Train Loss=0.1870 | Val Acc=0.9661 | Val F1 (W)=0.9653 | Val F1 (M)=0.7702
+9627.8s 313 Epoch 30/30: Train Loss=0.1870 | Val Acc=0.9668 | Val F1 (W)=0.9670 | Val F1 (M)=0.8391
+9627.8s 314 Fold 5 Results: Val Acc=0.9668, Val F1 (W)=0.9670, Val F1 (M)=0.8391, Train Time=1910.9s
+9627.8s 315 
+9627.8s 316 >>> Running Final Evaluation on DEDICATED TEST SET (Unseen Data)...
+9644.9s 317 DEDICATED TEST SET RESULTS: Acc=0.9699, F1 (W)=0.9710, F1 (M)=0.8601
+9644.9s 318 Results saved to: /kaggle/working/results_factor_30.json
+9644.9s 319 
+9644.9s 320 [Factor: 30%] SUMMARY: Avg. Val F1 (W)=0.9652 | Avg. Val F1 (M)=0.8146 | Avg. Time=1918.5s | Final Test F1 (W)=0.9710 | Final Test F1 (M)=0.8601
+9644.9s 321 
+9644.9s 322 --- FINAL EXPERIMENT SUMMARY ---
+9644.9s 323 |   Factor (%) |   Avg Validation Accuracy |   Avg Validation F1 (W) |   Avg Validation F1 (M) |   Avg Train Time (s) |   Final Test Accuracy |   Final Test F1 (W) |   Final Test F1 (M) |
+9644.9s 324 |-------------:|--------------------------:|------------------------:|------------------------:|---------------------:|----------------------:|--------------------:|--------------------:|
+9644.9s 325 |           30 |                  0.964497 |                0.965238 |                0.814627 |              1918.46 |              0.969922 |            0.970977 |             0.86012 |
+9649.5s 326 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+9649.5s 327 warn(
+9649.6s 328 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+9649.9s 329 [NbConvertApp] Writing 228976 bytes to __notebook__.ipynb
+9651.2s 330 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+9651.2s 331 warn(
+9651.2s 332 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+9652.0s 333 [NbConvertApp] Support files will be in __results___files/
+9652.0s 334 [NbConvertApp] Making directory __results___files
+9652.0s 335 [NbConvertApp] Making directory __results___files
+9652.0s 336 [NbConvertApp] Writing 404695 bytes to __results__.html
