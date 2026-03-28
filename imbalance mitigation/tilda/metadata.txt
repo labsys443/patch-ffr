@@ -1,0 +1,22 @@
+Patch Extraction Metadata - TILDA
+==========================
+Date: 2026-02-25 21:29:21.747510
+Dataset root: /kaggle/input/datasets/redacted/tilda-400
+Patch sizes: [64]
+Tolerance: 0.05 (5.0%)
+Clamp: 0.1 (10.0%)
+
+Class mapping:
+  0: hole
+  1: foreign_objects
+  2: oil_spot
+  3: thread_error
+
+Patch Counts:
+
+Resolution 64x64:
+  hole: 357
+  foreign_objects: 912
+  oil_spot: 659
+  thread_error: 658
+  good: 35814

@@ -1,0 +1,49 @@
+Patch Extraction Metadata - HKU
+==========================
+Date: 2026-03-16 17:08:37.685067
+Dataset root: /kaggle/input/datasets/angelolmg/hku-dataset
+Patch sizes: [32, 64, 128]
+Tolerance: 0.05 (5.0%)
+Clamp: 0.1 (10.0%)
+
+Class mapping:
+  0: BrokenEnd
+  1: Hole
+  2: NettingMultiple
+  3: ThickBar
+  4: ThinBar
+  5: Knots
+
+Mean IoU (Reconstructed vs Original Mask for Defective Images):
+  Resolution 32x32: 0.2325
+  Resolution 64x64: 0.1208
+  Resolution 128x128: 0.0535
+
+Patch Counts:
+
+Resolution 32x32:
+  BrokenEnd: 116
+  Hole: 68
+  NettingMultiple: 80
+  ThickBar: 166
+  ThinBar: 90
+  Knots: 36
+  good: 10068
+
+Resolution 64x64:
+  BrokenEnd: 59
+  Hole: 37
+  NettingMultiple: 48
+  ThickBar: 65
+  ThinBar: 52
+  Knots: 27
+  good: 2368
+
+Resolution 128x128:
+  BrokenEnd: 34
+  Hole: 24
+  NettingMultiple: 34
+  ThickBar: 37
+  ThinBar: 33
+  Knots: 17
+  good: 485
